@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="1b17c03c-25fa-4105-98ec-e05401184394" Publisher="CN=dokkillo" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>iEve8</DisplayName>
+    <PublisherDisplayName>dokkillo</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="iEve8.App">
+      <VisualElements DisplayName="iEve8" Logo="Assets\iEve8-Icon-150x150px.png" SmallLogo="Assets\iEve8-Icon-30x30px.png" Description="iEve8" ForegroundText="light" BackgroundColor="#051f31">
+        <DefaultTile ShowName="allLogos" WideLogo="Assets\iEve8-Icon-310x150px.png" />
+        <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#051f31" />
+        <InitialRotationPreference>
+          <Rotation Preference="landscape" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
